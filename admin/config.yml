@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+  base_comment: "Cms commit"
+
+site_url: https://servicenextech.netlify.app
+base_directory: "nextech-hub-service - Copy4"
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "books"
+    label: "Books"
+    folder: "content/books"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Cover", name: "image", widget: "image"}
