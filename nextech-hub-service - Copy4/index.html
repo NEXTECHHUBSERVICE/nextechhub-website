@@ -517,6 +517,43 @@
                 <p>&copy; 2026 Nextech Hub Service. Tous droits reserves.</p>
             </div>
         </div>
+
+
+        <section id="client-hub" style="padding: 40px 20px; background-color: #f4f7f9; border-top: 4px solid #0056b3; margin-top: 40px; font-family: 'Segoe UI', sans-serif;">
+    <div style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h2 style="color: #002d5a; text-align: center;">Découvrir notre bibliothèque</h2>
+        <p style="color: #555; text-align: center; margin-bottom: 30px;">Envoyez-nous vos projets pour une prise en charge rapide.</p>
+
+        <form name="client-project-hub" method="POST" data-netlify="true" enctype="multipart/form-data">
+            <input type="hidden" name="form-name" value="client-project-hub" />
+            
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-weight: bold; color: #002d5a;">Nom complet :</label>
+                <input type="text" name="name" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; box-sizing: border-box;">
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-weight: bold; color: #002d5a;">Service demandé :</label>
+                <select name="service" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; background: #fff;">
+                    <option value="spss">Traitement de données (SPSS)</option>
+                    <option value="latex">Design LaTeX</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+            
+            <div style="margin-bottom: 25px;">
+                <label style="display: block; font-weight: bold; color: #002d5a;">Fichier du projet :</label>
+                <input type="file" name="file-upload" required style="width: 100%; padding: 10px; border: 2px dashed #00aaff; border-radius: 8px; background: #f0faff;">
+            </div>
+            
+            <button type="submit" style="background-color: #0056b3; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.3s;">
+                Envoyer le projet
+            </button>
+        </form>
+    </div>
+</section>
+
+        
     </footer>
 
     <!-- Back to Top Button -->
